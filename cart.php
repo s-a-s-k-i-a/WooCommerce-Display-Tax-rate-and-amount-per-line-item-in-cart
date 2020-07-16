@@ -126,7 +126,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 						<td class="product-tax" data-title="<?php esc_attr_e( 'Tax', 'woocommerce' ); ?>">
 							<?php
 							$tax_html           = '';
-							$tax_incl_excl_html = '';
 
 							if ( $_product->is_taxable() ) {
 								$tax_rates = WC_Tax::get_rates( $_product->get_tax_class() );
